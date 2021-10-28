@@ -1,7 +1,7 @@
 Add-PSSnapin Microsoft.Exchange.Management.PowerShell.SnapIn
 
 # Location of the ecp directory under ClientAccess directory
-$ECPConfigDir = 'C:Program Files\Microsoft\Exchange Server\V15\ClientAccess\ecp'
+$ECPConfigDir = 'C:\Program Files\Microsoft\Exchange Server\V15\ClientAccess\ecp'
 
 # List of Exchange Servers - This may be pulled in any way desired, or specifically listed in a powershell variable. I use the DAG Command.
 $Serverlist = (Get-DatabaseAvailabilityGroup "<DAGNAME>").Servers.Name
